@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Personal Portfolio Website - Thomas Fan</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/dc9d74a0c5.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src = "images/logo.png" class = "logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I am <span>Thomas</span><br> and <span>Welcome</span> to <br><span>My Portfolio</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about-------- ctrl+k+c-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello! I'm Thomas Fan, a passionate Software Developer currently based in Albuquerque, New Mexico. Before making this vibrant city my home, I spent most of my life in Missouri, including my time in Rolla for school. I have a twin brother, and we share many adventures together.
+
+              One of my greatest joys is playing the piano, a hobby that lets me express my creativity and unwind. I also have a Maltese dog, who adds a lot of joy and companionship to my life.
+              
+              I'm a big fan of gaming, TV shows, and application design. My interest in art, especially user interface design, drives my work and inspires me to create visually appealing and intuitive digital experiences. I love teaching and used to give course lectures as a GTA, which allowed me to share my knowledge and passion with others.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>I am confident in developing robust code in multiple languages and conducting rigorous unit testing
+                                                    to ensure that your site will run smoothly. 
+                </li>
+                <li><span>Deep Learning</span><br>My graduate coursework was primarily focused upon deep learning fundamentals and algorithmic learning. 
+                                                  I am able to construct and work with neural networks, large datasets, and make meaning out of them.
+                </li>
+                <li><span>Communication and Presentation</span><br>I am passionate about educating and teaching those who are eager to learn. Previously,
+                                                                   I have taught college courses and served roles requiring strong communication skills.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>06/03/23 - Present</span><br>Software Engineer at Sandia National Laboratories</li>
+                <li><span>08/13/23 - 12/31/23</span><br>Graduate Teaching Assistant at Missouri University of Science and Technology</li>
+                <li><span>Summer 2022</span><br>Software Engineer Intern at Gap Tech Internship</li>
+                <li><span>Summer 2021</span><br>Backend Tech Intern at Wells Fargo</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023 - 2024</span><br>M.S. Computer Science — GPA: 4.0/ 4.0
+                                            <br>Missouri University of Science and Technology   
+                                            <br>(Degree Completed)                         
+                </li>
+                <li><span>2019 - 2023</span><br>B.S. Computer Science — GPA: 3.944/ 4.0
+                                            <br>Missouri University of Science and Technology
+                                            <br>(Degree Completed)
+                </li>
+                <li><span>2015 - 2019</span><br>Rockwood Summit High School
+                                            <br>(Degree Completed)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!-- --------services---------- -->
+  <div id="services">
+    <div class ="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Unsupervised Classification</h2>
+          <p>8 Weeks of DL Projects! Tested with fundamental concepts including hyperparameters (keras-tuner), 
+             underfitting, overfitting, hidden layers, dropout, etc. Projects include a variety of topics from 
+             forecasting scaled sound pressure, to predicting Beijing air quality, text classification, CNN, RNN,
+             and much more!
+          </p>
+          <a href="https://github.com/thomasfan100/Unsupervised-Classification">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Personal Portfolio (Old)</h2>
+          <p>Check you my old website portfolio! The site was served on a static host with Jekyll and later
+             hosted through the Netlify webservice.
+          </p>
+          <a href="https://thomasfan.netlify.app/">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Basketball Web App</h2>
+          <p>Created an NBA API endpoint that gives a frontend for easy interaction. 
+            I worked on everything from the site visualization to restructuring data retrieved from the API in our React based project. 
+            Supported the team by bringing typescript code into production.
+          </p>
+          <a href="https://devpost.com/software/pickleroll">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------portfolio-------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Experiences</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Sandia National Laboratories</h3>
+            <p>
+              At Sandia, I developed robust C++ software for high-impact remote sensing projects. As part of a dedicated team, 
+              I utilized Rally for rigorous unit testing, ensuring software reliability and performance.
+              My work involved monitoring, maintaining, and troubleshooting treaty monitoring satellite and ground systems, 
+              crucial for national security and global treaty verification.
+            </p>
+            <a href="https://www.sandia.gov/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Gap Tech Internship</h3>
+            <p>During my internship at Gap Tech, I worked on backend development for the price item planning team, focusing on price planning and execution. 
+              I used Java and the Spring Boot framework, while also learning and implementing Scrum methodologies. I developed and moved code into production 
+              to update deprecated metrics used in service and API calls. Additionally, I monitored code impacting controllers and endpoints through database queries 
+              and unit testing, ensuring the smooth functioning of the system.
+            </p>
+            <a href="https://www.gapinc.com/en-us/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Wells Fargo Internship</h3>
+            <p>During my internship at Wells Fargo, I influenced billing fee calculations, impacting diagnostics for over 100,000 service calls. 
+              I served 23 Crown Jewel web applications, refining queries, alerts, and transaction snapshots for wholesale wealth and investment software. 
+              Additionally, I used application performance monitoring (APM) tools to oversee database issues and server health.
+            </p>
+            <a href="https://www.wellsfargo.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href ="#" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- -----------contact--------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>thomasfan100@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>314-604-8250</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/thomasfan400/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/thomasfan100"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/thomas._.fan/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/thomasfan/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/ThomasFanResume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Thomas Fan. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+
+	<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQXCVInuX8xHYrDk6NjLx_Bl6VQJVn4rSf6lL2fC5cAXb0qMZKC9NtAltvjghR5u9c/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>
