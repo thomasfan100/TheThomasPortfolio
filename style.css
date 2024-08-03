@@ -88,10 +88,6 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
-.about-col-2 p{
-    overflow-wrap: break-word;
-    word-break: break-all;
-}
 .sub-title{
     font-size: 60px;
     font-weight: 600px;
@@ -156,10 +152,6 @@ nav ul li a:hover::after{
     font-weight: 300; 
     border-radius: 10px;
     transition:background 0.5s, transform 0.5s;
-}
-.services-list p{
-    overflow-wrap: break-word;
-    word-break: break-all;
 }
 .services-list div i{
     font-size: 50px;
@@ -246,15 +238,18 @@ nav ul li a:hover::after{
     display:block;
     margin:50px auto;
     width: fit-content;
-    border: 1px solid #7c9982;
-    padding: 14px 50px; 
+    border: 2px solid #b39d96;
+    padding: 10px 30px; 
     border-radius: 6px;
     text-decoration:none;
-    color:#b39d96;
+    color:#91af97;
     transition: background 0.5s;
+    background: #f9f8f6 ;
+    font-size: 130%;
 }
 .btn:hover{
-    background: #7c9982;
+    background: #ccb397;
+
 }
 /* ------------contact---------- */
 .contact-left{
@@ -288,7 +283,6 @@ nav ul li a:hover::after{
 }
 .btn.btn2{
     display: inline-block;
-    background: #7c9982;
 }
 
 .contact-right form{
@@ -381,7 +375,7 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left,.contact-left{
+    .contact-left,.contact-right{
         flex-basis: 100%;
     }
     .copyright{
