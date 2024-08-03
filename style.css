@@ -239,13 +239,14 @@ nav ul li a:hover::after{
     margin:50px auto;
     width: fit-content;
     border: 2px solid #b39d96;
-    padding: 10px 30px; 
+    padding: 13px 40px; 
     border-radius: 6px;
     text-decoration:none;
     color:#91af97;
     transition: background 0.5s;
     background: #f9f8f6 ;
     font-size: 130%;
+    font-weight: bold;
 }
 .btn:hover{
     background: #ccb397;
